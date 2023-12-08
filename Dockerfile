@@ -7,7 +7,7 @@ COPY . .
 RUN apt-get install maven -v
 RUN mvn clean install
 
-FROM openjdk:21-jdk-slim
+FROM mcr.microsoft.com/openjdk/jdk:17-distroless
 
 EXPOSE 8080
 
